@@ -1,0 +1,13 @@
+pandas
+numpy
+git+https://github.com/JustAnotherArchivist/snscrape.git   # snscrape
+scikit-learn
+nltk
+pyarrow
+fastparquet
+bertopic
+xlrd
+openpyxl
+safetensors
+folium
+streamlit
