@@ -18,9 +18,9 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-st.title("Topic Modeling analysis on AirBnB reviews")
+st.title("Topic Modeling and Sentiment analysis on AirBnB reviews")
 st.write('*This is a dashboard based on the [AirBnB reviews](http://insideairbnb.com/get-the-data) \
-         in the city of Paris*')
+         in the city of Paris. 50000 reviews regarding hotel stays were analysed using BertTopic*')
 
 st.markdown("""
         <style>
@@ -41,6 +41,8 @@ def load_model():
     return topic_model
 
 topic_model = load_model()
+
+df = pd.read_parquet('data/paris_reviews_preprocessed.parquet')
 #################################################### Calculations #############################################################################
 
 
@@ -54,6 +56,15 @@ st.markdown(
     """<hr style="height:5px;border:none;color:#333;background-color:#333;" /> """,
     unsafe_allow_html=True,
 )
+
+
+st.dataframe(df.head(), hide_index=True)
+
+st.markdown(
+    """<hr style="height:5px;border:none;color:#333;background-color:#333;" /> """,
+    unsafe_allow_html=True,
+)
+
 
 st.markdown(
     "## Top 30 frequent topics"
