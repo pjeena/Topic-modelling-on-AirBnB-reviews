@@ -42,7 +42,7 @@ def load_model():
 
 topic_model = load_model()
 
-df = pd.read_parquet('data/paris_reviews_preprocessed.parquet')
+#df = pd.read_parquet('data/paris_reviews_preprocessed.parquet')
 #################################################### Calculations #############################################################################
 
 
@@ -58,7 +58,7 @@ st.markdown(
 )
 
 
-st.dataframe(df.head(), hide_index=True)
+#st.dataframe(df.head(), hide_index=True)
 
 st.markdown(
     """<hr style="height:5px;border:none;color:#333;background-color:#333;" /> """,
