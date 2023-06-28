@@ -52,18 +52,8 @@ topic_model = load_model()
 
 # st.markdown("<hr/>", unsafe_allow_html=True)
 
-st.markdown(
-    """<hr style="height:5px;border:none;color:#333;background-color:#333;" /> """,
-    unsafe_allow_html=True,
-)
-
 
 #st.dataframe(df.head(), hide_index=True)
-
-st.markdown(
-    """<hr style="height:5px;border:none;color:#333;background-color:#333;" /> """,
-    unsafe_allow_html=True,
-)
 
 
 st.markdown(
