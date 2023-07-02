@@ -21,12 +21,8 @@ st.set_page_config(page_icon="chart_with_upwards_trend")
 
 st.title("Sentiment analysis distribution in Paris")
 
-@st.cache_data
-def read_data():
-    df = pd.read_parquet("artifacts/sentiment_analysis.parquet")
-    return df
 
-df = read_data()
+df = pd.read_parquet("artifacts/sentiment_analysis.parquet")
 df_plot = df.copy()
 df["label"] = df["label"].apply(lambda x: 1 if x == "NEGATIVE" else 0)
 
