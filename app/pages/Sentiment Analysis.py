@@ -71,7 +71,7 @@ st.plotly_chart(fig, theme=None, use_container_width=True)
 st.markdown("## Statistics by day of month")
 
 fig = px.histogram(
-    df,
+    df_plot,
     x="month",
     y="listing_id",
     color="label",
