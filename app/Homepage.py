@@ -41,7 +41,7 @@ st.markdown(
 
 
 #################################################### Calculations #############################################################################
-@st.cache_data()
+@st.cache_data(experimental_allow_widgets=True, ttl=3600, max_entries=100)
 def load_model():
     topic_model = BERTopic.load("model/model_dir")
     return topic_model
