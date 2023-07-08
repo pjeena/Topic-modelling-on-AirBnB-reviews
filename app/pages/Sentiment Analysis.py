@@ -49,7 +49,7 @@ else:
     folium_static(map_obj)
 
     with st.sidebar:
-        st.warning('Here, the intensity in color represents negative sentiment. These insights can be leveraged for improving custimer service \
+        st.warning('Here, the intensity in color represents negative sentiment in and around that particular area. These insights can be leveraged for improving custimer service \
                    at the hotel locations with negative sentiment')
                    
 
