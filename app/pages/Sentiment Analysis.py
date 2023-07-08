@@ -19,7 +19,7 @@ from folium.plugins import HeatMap
 st.set_page_config(page_icon="chart_with_upwards_trend")
 
 
-st.title("Sentiment analysis distribution in Paris")
+st.title("Sentiment analysis distribution in Paris (Month-wise)")
 
 
 df = pd.read_parquet("artifacts/sentiment_analysis.parquet")
