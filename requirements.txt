@@ -6,6 +6,6 @@ fastparquet
 bertopic==0.15.0
 safetensors
 folium
-streamlit
+streamlit==1.26.0
 plotly
 streamlit_folium
